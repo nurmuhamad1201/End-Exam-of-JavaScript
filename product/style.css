@@ -1,0 +1,313 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+   padding-top: 20px;
+   background-color: #d6d6d6;
+position: sticky;
+top: 1px;
+z-index: 2;
+
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   width: 30%;
+}
+
+
+nav a{
+  
+    text-decoration: none;
+    color: #222222;
+    font-size: 30px;
+
+}
+
+.proHom{
+   height: 300px;
+   background-color: #F1F5F8;
+}
+
+.company-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .company-list li {
+    color: #235275;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .obshiy{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-right: 30px;
+   
+  }
+
+  .buttonsan{
+    padding-left: 30px;
+    /* position: static;
+    top: 2px; 
+    z-index: 13;
+     */
+  }
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+  }
+  
+  .box .container {
+    width: 30%;
+    height: 400px;
+    text-align: center;
+  }
+  
+  .box .container img {
+    width: 100%;
+    height: 60%;
+  }
+  
+
+.search {
+    height: 50px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+.search:hover {
+    border-color: #aaa;
+}
+
+.search:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+
+.buttonInfo {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: absolute; 
+  margin-top: -130px;
+  margin-left: 9%;
+  border: none;
+  background-color: transparent;
+  display: none;
+  z-index: 1; 
+
+  border-radius: 50%;
+
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  transition: opacity 0.3s;
+  
+
+}
+
+
+.buttonInfo:hover {
+  opacity: 0.8; 
+}
+
+
+
+.butonKorzin{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: absolute; 
+  margin-top: -130px;
+  margin-left: 16%;
+  border: none;
+  background-color: transparent;
+  display: none;
+  z-index: 1;
+
+
+  border-radius: 50%;
+  
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+.container:hover {
+ 
+  transition: 2s;
+  .buttonInfo{
+      display: block;
+    }
+    .butonKorzin{
+      display: block;
+    }
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 6;
+  width: 640px;
+  height: 705px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  
+}
+.modal div {
+    width: 95%;
+    margin: auto
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
+.modal {
+  display: none;
+}
+#show {
+  animation: v 0.1s;
+  display: block;
+}
+@keyframes v {
+  0% {
+    left: 1700px;
+  }
+  50% {
+    left: 1000px;
+  }
+}
+.c-img {
+  width: 130px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+}
+.d {
+  overflow: auto;
+  padding: 20px 40px;
+  display: flex;
+}
+.d2 {
+  color: black;
+  padding-left: 30px;
+}
+.d3 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.pilus {
+  border: 2px solid rgb(194 65 12);
+  padding: 0px 5px 0px 5px;
+  margin-top: -0px;
+  position: relative;
+  top: -2px;
+  border-radius: 5px;
+}
+.minus {
+  position: relative;
+  top: -2px;
+  border: 2px solid rgb(194 65 12);
+  padding: 0px 7px 0px 7px;
+  margin-top: -0px;
+  border-radius: 5px;
+}
+.c-name {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+
+  font-weight: 100;
+}
+.x {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  color: black;
+  font-weight: 100;
+  margin-left: 200px;
+  position: relative;
+  top: 5px;
+}
+.c-price {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+#g {
+  transition: transform 0.3s ease-in-out;
+}
+#g:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 420px) {
+  
+
+  .head {
+    padding: 10px 15px; 
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0 15px; /* Adjust padding for better spacing */
+  }
+
+  nav a {
+    font-size: 18px; /* Increase font size for better readability on smaller screens */
+  }
+
+  .search {
+    width: 90%; /* Adjust width for better spacing */
+    font-size: 12px; /* Decrease font size for better readability on smaller screens */
+  }
+
+  .box .container {
+    width: 85%; /* Adjust container width for better spacing */
+    margin: 15px;
+    margin: auto;
+  }
+  
+  .box .container img {
+    width: 100%;
+    height: 250px;
+  }
+  .obshiy{
+    display: block;
+  }
+  .modal{
+    width: 95%;
+    margin: auto;
+  }
+ 
+  .butonKorzin {
+    margin-left: 42%;
+  }
+  .buttonInfo{
+    margin-left: 12%;
+  }
+
+}

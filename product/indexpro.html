@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="/product/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="head">
+        <nav>
+            
+            <a href="/home/index.html">Home</a>
+
+            <a href="/product/indexpro.html">Products</a>
+            <a href="/about/index.html">About</a>
+        </nav>
+        <a href="./index.html"><img src="/home/img/comfy.png" alt=""></a>
+        <img class="corzina" src="/home/img//icons8-basket-64.png" alt="">
+        <p class="rakam w-6 py-0 bg-orange-700 absolute text-center text-white mt-[-5px] right-[8px] opacity-90 top-6 rounded-full"></p>
+    </header>
+
+
+    <div class="proHom">
+        <h1 style="color: #235275; font-family: monospace; margin-left: 10%; font-size: 30px; padding-top: 130px;"><a style="text-decoration: none; color: #235275; font-size: 30px;" href="/home/index.html">Home</a> <span style="font-weight: 900; font-family: fantasy; font-size: 30px;">/</span>  Products</h1>
+    </div>
+
+    <div data-aos="fade-up"
+    data-aos-duration="3000" class="obshiy">
+        <div class="buttonsan">
+            <input placeholder="search..." class="search" type="search">
+            <h1 style="font-family: monospace; font-weight: 600;">Company</h1>
+
+            <ul class="company-list">
+  <li class="font-medium text-xl hidden">Company</li>
+  <li class="all">All</li>
+  <li class="Ikea">Ikea</li>
+  <li class="Marcos">Marcos</li>
+  <li class="Caressa">Caressa</li>
+  <li class="Liddy">Liddy</li>
+  <input class="range" type="range">
+  <p class="priceValue"></p>
+</ul>
+
+        </div>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="box"></div>
+    </div>
+
+    <div class="modal 2xl:w-[300px] h-[700px] bg-white right-0 top-0 fixed border-[1px] shadow-black shadow-2xl border-black overflow-scroll">
+
+        <div class="close w-[50px]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" color="#000000" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 1 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </div>
+        <div class="border-[3px] border-orange-700 mx-[50px]">
+          <p
+            class="text-3xl text-center text-black py-[50px]"
+            style="font-family: charm"
+          >
+            Your Bag
+          </p>
+          <div class="s"></div>
+          <p
+            class="tottal-price text-3xl text-center text-black py-[20px] pr-[50px] mt-[20px]"
+            style="font-family: charm"
+          ></p>
+          <div
+            class="close2 w-[100%] m-auto h-[100px] text-center font-bold text-2xl pt-8 text-white bg-orange-700 mt-8"
+          >
+            CHECKOUT
+          </div>
+        </div>
+      </div>
+    
+      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="/home/img/html5 (1).png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>  @import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
+        .modal {
+          display: none;
+        }
+        #show {
+          animation: v 0.1s;
+          display: block;
+        }
+        @keyframes v {
+          0% {
+            left: 1700px;
+          }
+          50% {
+            left: 1000px;
+          }
+        }
+        .c-img {
+          width: 130px;
+          height: 90px;
+          border-radius: 8px;
+          border: 1px solid black;
+          box-shadow: 0px 0px 10px black;
+        }
+        .d {
+          overflow: auto;
+          padding: 20px 40px;
+          display: flex;
+        }
+        .d2 {
+          color: black;
+          padding-left: 30px;
+        }
+        .d3 {
+          padding-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          width: 80px;
+        }
+        .pilus {
+          border: 2px solid rgb(194 65 12);
+          padding: 0px 5px 0px 5px;
+          margin-top: -0px;
+          position: relative;
+          top: -2px;
+          border-radius: 5px;
+        }
+        .minus {
+          position: relative;
+          top: -2px;
+          border: 2px solid rgb(194 65 12);
+          padding: 0px 7px 0px 7px;
+          margin-top: -0px;
+          border-radius: 5px;
+        }
+        .c-name {
+          font-family: "Courier New", Courier, monospace;
+          font-size: 18px;
+  
+          font-weight: 100;
+        }
+        .x {
+          font-family: "Courier New", Courier, monospace;
+          font-size: 18px;
+          color: black;
+          font-weight: 100;
+          margin-left: 200px;
+          position: relative;
+          top: 5px;
+        }
+        .c-price {
+          font-family: "Courier New", Courier, monospace;
+          font-weight: 900;
+        }
+        #g {
+          transition: transform 0.3s ease-in-out;
+        }
+        #g:hover {
+          transform: scale(1.2);
+        }</style>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">  
+
+
+</head>
+<body>
+    
+<div  data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="1000" class="divImg">
+    <header style="background-color: rgba(240, 248, 255, 0.329); padding-bottom: 10px;" class="head">
+        <nav>
+            
+            <a href="/home/index.html">Home</a>
+
+            <a href="/product/indexpro.html">Products</a>
+            <a href="/about/index.html">About</a>
+        </nav>
+        <a href="./index.html"><img src="/home/img/comfy.png" alt=""></a>
+         <a href="/Magazin Do-Do/lock.html"><img style="border: 5px solid black; border-radius: 50%;" src="/Magazin Do-Do/img/icons8-user-50.png" alt=""></a>
+        <button style="background-color: transparent; border: none;" class="corzina"><img src="/home/img/icons8-basket-64.png" alt="" style="filter: brightness(0) invert(1)"></button>
+        <p class="rakam w-6 bg-orange-700 absolute text-center text-white mt-[-5px] right-[85px] opacity-90 top-6 rounded-full"></p>
+    </header>
+    
+   
+   <div class="texts">
+     <h1 class="rest">Rest, Relax, Unwind</h1>
+    <p>Embrace your choices - we do </p>
+    <button class="Show"><a href="/product/indexpro.html">SHOW NOW</a></button>
+</div>
+
+</div>
+
+
+<div data-aos="fade-left" data-aos-duration="1000" class="divforGet">
+    <h1 style="font-size: 50px;" class="h1get"><span style="color: #BA5D2C; font-weight: 900; font-size: 30px; font-family: fantasy;">/</span>Featured</h1>
+    <div class="box"></div>
+    <button class="All"><a href="/product/indexpro.html">ALL PRODUCTS</a></button>
+</div>
+
+
+<div style="display: none;" class="modal 2xl:w-[600px] h-[700px] bg-white right-0 top-0 fixed border-[1px] shadow-black shadow-2xl border-none overflow-scroll">
+
+
+    <div  class="close w-[50px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" color="#000000" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 1 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></svg>
+    </div>
+    <div class="border-[3px] border-orange-700 mx-[50px]">
+      <p class="text-3xl text-center text-black py-[50px]" style="font-family: charm"> Your Bag</p>
+      <div class="s"></div>
+      <p class="tottal-price text-3xl text-center text-black py-[20px] pr-[50px] mt-[20px]" style="font-family: charm"></p>
+      <div class="close2 w-[100%] m-auto h-[100px] text-center font-bold text-2xl pt-8 text-white bg-orange-700 mt-8">CHECKOUT</div></div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
